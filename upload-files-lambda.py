@@ -4,8 +4,8 @@ import zipfile
 
 s3 = boto3.resource('s3', config=Config(signature_version='s3v4'))
 
-build_bucket = s3.Bucket('portfoliobuild.robinnorwood.info')
-portfolio_bucket = s3.Bucket('portfolio.robinnorwood.info')
+build_bucket = s3.Bucket('portfoliobuild.sunlee.info')
+portfolio_bucket = s3.Bucket('portfolio.sunlee.info')
 
 # On Windows, this will need to be a different location than /tmp
 build_bucket.download_file('portfolio.zip', '/tmp/portfolio.zip')
